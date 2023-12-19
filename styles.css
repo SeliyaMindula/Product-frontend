@@ -1,0 +1,475 @@
+  /* Google fonts  */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;1,100&display=swap');
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  :root{
+    --text-color:#000000;
+    --main-color: #3a358f;
+    --navbar-background: #FFFFFF; 
+    --navbar-text-color: #000000; 
+    --navbar-highlight-color: #3a358f; 
+  }
+  header{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    background: var(--navbar-background);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+
+
+/*NAVBAR*/
+  
+.navbar-custom {
+  background-color: #FFF; 
+  
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: #333; 
+}
+.navbar-custom-right {
+  display: flex;
+  align-items: center;
+}
+.navbar-custom .nav-link.active {
+  color: #490082; 
+  border-bottom: 2px solid #490082; 
+}
+.navbar-custom .nav-item:not(:last-child) {
+  margin-right: auto; 
+}
+.navbar-custom .login {
+  background-color: #490082; 
+  color: #ffffff;
+  padding: 8px 15px 8px 15px; 
+  border-radius: 0px; 
+  margin-left: 10px; 
+}
+.navbar-custom .Genealogy {
+  background-color: #ffffff; 
+  color: #3b3b3b;
+  border: 1px solid #3b3b3b;
+  padding: 8px 15px 8px 15px; 
+  border-radius: 0px; 
+  margin-left: 10px; 
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+  margin-left: auto;
+}
+.navbar-toggler-icon {
+  filter: invert(42%); 
+}
+.navbar-icons{
+  margin-right: 20px; 
+  display: flex;
+  padding-left: 30px;
+  padding-right: 20px;
+
+}
+
+
+ /* FOOTER */
+
+footer {
+  background: #fff;
+  color: #333; 
+  padding: 20px 0;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  margin-bottom: 20px; 
+  box-shadow: 0px -12px 13px 0px rgba(0, 0, 0, 0.1); 
+
+}
+
+.footer-logo p {
+  font-size: 14px;
+  color: #490082; 
+  margin-top: 10px;
+}
+
+.footer-links a {
+  margin-right: 20px; 
+  color: #490082; 
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-socials a {
+  font-size: 24px; 
+  color: #490082; 
+  margin-right: 20px; 
+}
+
+.footer-socials a:hover {
+  color: darken(#6C63FF, 10%); 
+}
+
+.footer-bottom p {
+  text-align: center;
+  font-size: 14px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.home {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.arrow {
+  font-size: 1.4rem; 
+  color: white; 
+  background-color: #490082; 
+  border: 0px solid white; 
+  border-radius: 0.25rem; 
+  padding: 0.5rem 1rem; 
+}
+
+
+.img-fluid {
+  max-height: 100vh;
+  width: auto; 
+  margin-bottom: 30px; 
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.Product h1 {
+  font-size: 1.8rem; 
+  margin-bottom: 0.5rem; 
+  color: #ffffff; 
+}
+
+.Product .fz {
+  font-size: 1.0rem; 
+  color: #ffffff; 
+}
+
+.Product button.btn-lg {
+  padding: 0.5rem 1.5rem; 
+  font-size: 0.5rem; 
+}
+
+.product-btn {
+  font-size: 1.0rem; 
+  color: #490082; 
+  border-radius: 0.25rem; 
+  padding: 0.5rem 1rem; 
+}
+
+ .Wellness{
+  background-image: url("img/wellness.png");
+  width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  position: relative;
+  height: 100vh;
+
+} 
+
+.product-home .row, .product-home .col-12 {
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumb {
+  background-color: transparent; 
+  padding: 1rem 0; 
+}
+.breadcrumb-item+.breadcrumb-item::before {
+  content: "*";
+  color: #4e4e4e; 
+  font-weight: bold; 
+  padding: 0 0.5rem; 
+}
+.breadcrumb a {
+  color: #4e4e4e; 
+  text-decoration: none; 
+}
+
+.product-section {
+  padding: 2rem;
+}
+.product-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+.product-title {
+  font-size: 2rem; 
+  color: #333; 
+  margin-bottom: 1rem;
+}
+.product-description {
+  margin-bottom: 2rem;
+  color: #5f5f5f;
+}
+.why-buy-section {
+  background: #f8f9fa; 
+  padding: 2rem;
+}
+.why-buy-title {
+  font-size: 1.8rem; 
+  color: #000000; 
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+.why-buy-content {
+  font-size: 1rem; 
+}
+
+.skincare-range-section {
+  padding: 2rem 0; 
+}
+.skincare-range-title {
+  font-size: 1.3rem; 
+  color: #490082; 
+  font-weight: bold; 
+  display: flex;
+  align-items: center;
+}
+.skincare-range-title:before {
+  content: ''; 
+  width: 10px; 
+  height: 30px;
+  background-color: #490082; 
+  margin-right: 10px; 
+}
+
+.product-card {
+  border: 2px solid #490082;
+  border-radius: 15px;
+  padding: 1rem;
+  margin: 0.5rem;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.product-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.product-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+.product-title {
+  color: #333;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.product-price {
+  color: #333;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.discount {
+  color: red;
+  font-size: 0.9rem;
+}
+.original-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-left: 0.5rem;
+}
+.icon-heart {
+  position: absolute;
+  top: 1rem;
+  right: 1rem; 
+  font-size: 1.5rem;
+  color: #4e4e4e;
+}
+.icon-show {
+  position: absolute;
+  top: 1rem;
+  left: 1rem; 
+  font-size: 1.5rem;
+  color: #333;
+}
+.product-rating {
+  color: #ffc107; 
+}
+
+.benefits-section {
+  background-image: url('img/d.png');
+  background-color: #732ea8;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 4rem 0; 
+}
+.benefits-section .statistic {
+  font-size: 3rem; 
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.benefits-section .description {
+  font-size: 1rem;
+}
+.benefits-section .highlight {
+  font-weight: bold;
+}
+
+.product-card2-3 {
+  position: relative;
+  color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.product-card2-3 img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+.product-card2-3:hover img {
+  transform: scale(1.05);
+}
+.product-card2-3-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(71, 71, 71, 0.5); 
+  width: 100%;
+  padding: 20px;
+}
+.product-card2-3-content h5 {
+  font-size: 1.5rem;
+}
+.product-card2-3-content p {
+  font-size: 1rem;
+}
+.view-now-btn {
+  text-decoration: none;
+  background-color: #8979af; 
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-top: 10px;
+  display: inline-block;
+}
+.view-now-btn:hover {
+  background-color: #777777; 
+}
+
+.quantity-selector input {
+  border: none;
+  width: 2rem;
+  text-align: center;
+}
+.add-to-cart-btn {
+  background-color: #490082;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  margin-top: 1rem; 
+}
+
+.thumbnail-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review-card {
+  border: 1px solid #e3e3e3;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+}
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.write-review-btn {
+  background-color: #490082; 
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+}
+.review-rating {
+  color: #ffc107; 
+}
+.review-date {
+  color: #adb5bd;
+  font-size: 0.8rem;
+}
+.review-content {
+  color: #495057;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+.load-more-btn {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  background-color: #e3e3e3;
+  color: #495057;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+  text-align: center;
+}
+.load-more-btn:hover {
+  background-color: #d2d2d2;
+  cursor: pointer;
+}
+.product-title-p {
+  padding-top: 170px; 
+}
+
+
+  @media (max-width: 991px) {
+    .navbar-brand .brand-text {
+      display: inline-block;
+    }
+    .navbar-brand img {
+      max-height: 50px;
+    }
+    .hero-title {
+      font-size: 2rem; 
+  }
+  .Product .btn-lg {
+    width: 100%; 
+    margin-bottom: 10px; 
+  }
+}
