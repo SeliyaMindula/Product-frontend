@@ -1,292 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product Detail Page</title>
-    <!--CSS-->
-    <link rel="stylesheet" href="styles.css" />
-    <!--Bootstrap-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-    <!--Box icons-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-    />
-  </head>
 
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-custom">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="img/logo.png" alt="Company Logo" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a href="Index.html" class="nav-link active">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="#AboutUs" class="nav-link">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a href="product.html" class="nav-link">Product</a>
-              </li>
-              <li class="nav-item">
-                <a href="#Wellness" class="nav-link">Wellness</a>
-              </li>
-              <li class="nav-item">
-                <a href="#Download" class="nav-link">Download</a>
-              </li>
-              <li class="nav-item">
-                <a href="#Testimonials" class="nav-link">Testimonials</a>
-              </li>
-              <li class="nav-item">
-                <a href="#Legal" class="nav-link">Legal</a>
-              </li>
-              <li class="nav-item">
-                <a href="#search" class="nav-link"
-                  ><i class="bx bx-search"></i
-                ></a>
-              </li>
-              <li class="nav-item">
-                <a href="https://www.facebook.com" class="nav-link"
-                  ><i class="bx bxl-facebook"></i
-                ></a>
-              </li>
-              <li class="nav-item">
-                <a href="https://www.instagram.com" class="nav-link"
-                  ><i class="bx bxl-instagram"></i
-                ></a>
-              </li>
-              <li class="nav-item">
-                <a href="#cart" class="nav-link"><i class="bx bxs-cart"></i></a>
-              </li>
-              <li class="nav-item">
-                <a href="#Genealogy" class="nav-link">Genealogy</a>
-              </li>
-              <li class="nav-item">
-                <a href="#login" class="nav-link login">Login</a>
-              </li>
-            </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Detail Page</title>
+  <!--CSS-->
+  <link rel="stylesheet" href="styles.css" />
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <!--Box icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" alt="Company Logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="Index.html" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="#AboutUs" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="product.html" class="nav-link">Product</a></li>
+            <li class="nav-item"><a href="#Wellness" class="nav-link">Wellness</a></li>
+            <li class="nav-item"><a href="#Download" class="nav-link">Download</a></li>
+            <li class="nav-item"><a href="#Testimonials" class="nav-link">Testimonials</a></li>
+            <li class="nav-item"><a href="#Legal" class="nav-link">Legal</a></li>
+          </ul>
+
+          <div class="navbar-icons">
+            <li class="nav-item"><a href="#search" class="nav-link"><i class="bx bx-search"></i></a></li>
+            <li class="nav-item"><a href="https://www.facebook.com" class="nav-link"><i class="bx bxl-facebook"></i></a>
+            </li>
+            <li class="nav-item"><a href="https://www.instagram.com" class="nav-link"><i
+                  class="bx bxl-instagram"></i></a></li>
+            <li class="nav-item"><a href="#cart" class="nav-link"><i class="bx bxs-cart"></i></a></li>
           </div>
-        </div>
-      </nav>
-    </header>
 
-    <main>
-      <section class="product-title-p">
-        <div class="container">
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item"><a href="#">Product Page</a></li>
-              <li class="breadcrumb-item active" aria-current="page">
-                Product Detail Page
-              </li>
-            </ol>
-          </nav>
-        </div>
-      </section>
-
-      <hr />
-
-      <div class="container mt-4">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="thumbnail-wrapper">
-              <img
-                src="img/product1.png"
-                alt="Thumbnail 1"
-                class="img-thumbnail mb-2"
-              />
-              <img
-                src="img/product2.png"
-                alt="Thumbnail 2"
-                class="img-thumbnail mb-2"
-              />
-              <img
-                src="img/product1.png"
-                alt="Thumbnail 3"
-                class="img-thumbnail mb-2"
-              />
-            </div>
-          </div>
-          <div class="col-md-4 align-self-center">
-            <img
-              src="img/product1.1.png"
-              alt="Thumbnail"
-              class="product-image-thumbnail"
-              style="width: 300px"
-            />
-          </div>
-          <div class="col-md-4 align-self-center">
-            <div class="product-details">
-              <h5 class="product-title">Celavive® Pack (Dry/Sensitive)</h5>
-              <div class="product-rating">★★★★★ 4.5</div>
-              <div class="product-price">
-                Rs 1,120 <span class="original-price">Rs 1,500</span>
-                <span class="discount">-30%</span>
-              </div>
-              <p>
-                Reveal your skin's natural radiance with this comprehensive
-                Celavive Pack with advanced oligopeptides.
-              </p>
-              <div class="input-group">
-                <button class="btn btn-outline-secondary" type="button">
-                  -
-                </button>
-                <input
-                  type="text"
-                  class="form-control text-center"
-                  value="1"
-                  style="max-width: 50px"
-                />
-                <button class="btn btn-outline-secondary" type="button">
-                  +
-                </button>
-              </div>
-              <button class="add-to-cart-btn">Add to Cart</button>
-            </div>
+          <div class="navbar-custom-right">
+            <a href="#Genealogy" class="nav-link Genealogy">Genealogy</a>
+            <a href="#login" class="nav-link login">Login</a>
           </div>
         </div>
       </div>
+    </nav>
+  </header>
 
-      <div class="container mt-4">
-        <ul class="nav nav-tabs" id="productTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link active"
-              id="product-details-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#productDetails"
-              type="button"
-              role="tab"
-              aria-controls="productDetails"
-              aria-selected="true"
-            >
-              Product Details
-            </button>
+  <main>
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Product Page</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Product Detail Page
           </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="rating-reviews-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#ratingReviews"
-              type="button"
-              role="tab"
-              aria-controls="ratingReviews"
-              aria-selected="false"
-            >
-              Rating & Reviews
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="faqs-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#faqs"
-              type="button"
-              role="tab"
-              aria-controls="faqs"
-              aria-selected="false"
-            >
-              FAQs
-            </button>
-          </li>
-        </ul>
-        <div class="tab-content" id="productTabContent">
-          <div
-            class="tab-pane fade show active"
-            id="productDetails"
-            role="tabpanel"
-            aria-labelledby="product-details-tab"
-          >
-            <!-- Product Details Content Here -->
-            <div class="row">
-              <div class="col-md-4">
-                <img
-                  src="img/product1.1.png"
-                  alt="Thumbnail"
-                  class="product-image-thumbnail"
-                  style="width: 300px"
-                />
-              </div>
+        </ol>
+      </nav>
+    </div>
 
-              <div class="col-md-4 align-self-center">
-                <h2>Benefits of Skincare</h2>
-                <p class="product-description">
-                  Met minim Mollie non desert Alamo est sit clichey dolor do met
-                  sent. RELIT official sent nostrum met.
-                </p>
-                <p class="product-description">
-                  Met minim Mollie non desert Alamo est sit clichey dolor do met
-                  sent. RELIT official Excitation venial consequent sent nostrum
-                  met.
-                </p>
-              </div>
+    <hr />
 
-              <div class="col-md-4 align-self-center">
-                <h3>The Perfect Ingredient</h3>
-                <ul class="product-description">
-                  <li style="list-style-type: square">asa asasdf dsf gt</li>
-                  <li style="list-style-type: square">asa asasdf dsf gt</li>
-                </ul>
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail-wrapper">
+            <img src="img/product1.png" alt="Thumbnail 1" class="img-thumbnail mb-2" />
+            <img src="img/product2.png" alt="Thumbnail 2" class="img-thumbnail mb-2" />
+            <img src="img/product1.png" alt="Thumbnail 3" class="img-thumbnail mb-2" />
+          </div>
+        </div>
+        <div class="col-md-4 align-self-center">
+          <img src="img/product1.png" alt="Thumbnail" class="product-image-thumbnail" style="width: 300px" />
+        </div>
+        <div class="col-md-4 align-self-center">
+          <div class="product-details">
+            <h5 class="product-title">Celavive® Pack (Dry/Sensitive)</h5>
+            <div class="product-rating">★★★★★ 4.5</div>
+            <div class="product-price">
+              Rs 1,120 <span class="original-price">Rs 1,500</span>
+              <span class="discount">-30%</span>
+            </div>
+            <p>
+              Reveal your skin's natural radiance with this comprehensive
+              Celavive Pack with advanced oligopeptides.
+            </p>
+            <div class="input-group">
+              <button class="btn btn-outline-secondary" type="button">
+                -
+              </button>
+              <input type="text" class="form-control text-center" value="1" style="max-width: 50px" />
+              <button class="btn btn-outline-secondary" type="button">
+                +
+              </button>
+            </div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-                <h3>The Best Practice</h3>
-                <ul class="product-description">
-                  <li style="list-style-type: square">asa asasdf dsf gt</li>
-                  <li style="list-style-type: square">asa asasdf dsf gt</li>
-                </ul>
-              </div>
+    <div class="container mt-4">
+      <ul class="nav nav-tabs" id="productTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="product-details-tab" data-bs-toggle="tab" data-bs-target="#productDetails"
+            type="button" role="tab" aria-controls="productDetails" aria-selected="true">
+            Product Details
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="rating-reviews-tab" data-bs-toggle="tab" data-bs-target="#ratingReviews"
+            type="button" role="tab" aria-controls="ratingReviews" aria-selected="false">
+            Rating & Reviews
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="faqs-tab" data-bs-toggle="tab" data-bs-target="#faqs" type="button" role="tab"
+            aria-controls="faqs" aria-selected="false">
+            FAQs
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="productTabContent">
+        <div class="tab-pane fade show active" id="productDetails" role="tabpanel"
+          aria-labelledby="product-details-tab">
+          <!-- Product Details Content Here -->
+          <div class="row">
+            <div class="col-md-4">
+              <img src="img/product1.1.png" alt="Thumbnail" class="product-image-thumbnail" style="width: 300px" />
+            </div>
 
-              <div class="col-md-12">
-                <h3>The Perfect Ingredient</h3>
-                <p class="product-description">
-                    Met minim Mollie non desert Alamo est sit clichey dolor do met
-                    sent. RELIT official Excitation venial consequent sent nostrum
-                    met  RELIT official Excitation venial consequent sent nostrum
-                    met  RELIT official Excitation venial consequent sent nostrum
-                    met.
-                </p>
-                <ul class="product-description">
-                    <li style="list-style-type: circle">asa gf dfd  gt</li>
-                    <li style="list-style-type: circle">asa asas df  dsf gt</li>
-                    <li style="list-style-type: circle">dfd afasdf dsf gt</li>
-                </ul>
-              </div>
+            <div class="col-md-4 align-self-center">
+              <h2>Benefits of Skincare</h2>
+              <p class="product-description">
+                Met minim Mollie non desert Alamo est sit clichey dolor do met
+                sent. RELIT official sent nostrum met.
+              </p>
+              <p class="product-description">
+                Met minim Mollie non desert Alamo est sit clichey dolor do met
+                sent. RELIT official Excitation venial consequent sent nostrum
+                met.
+              </p>
+            </div>
+
+            <div class="col-md-4 align-self-center">
+              <h3>The Perfect Ingredient</h3>
+              <ul class="product-description">
+                <li style="list-style-type: square">asa asasdf dsf gt</li>
+                <li style="list-style-type: square">asa asasdf dsf gt</li>
+              </ul>
+
+              <h3>The Best Practice</h3>
+              <ul class="product-description">
+                <li style="list-style-type: square">asa asasdf dsf gt</li>
+                <li style="list-style-type: square">asa asasdf dsf gt</li>
+              </ul>
+            </div>
+
+            <div class="col-md-12">
+              <h3>The Perfect Ingredient</h3>
+              <p class="product-description">
+                Met minim Mollie non desert Alamo est sit clichey dolor do met
+                sent. RELIT official Excitation venial consequent sent nostrum
+                met RELIT official Excitation venial consequent sent nostrum
+                met RELIT official Excitation venial consequent sent nostrum
+                met.
+              </p>
+              <ul class="product-description">
+                <li style="list-style-type: circle">asa gf dfd gt</li>
+                <li style="list-style-type: circle">asa asas df dsf gt</li>
+                <li style="list-style-type: circle">dfd afasdf dsf gt</li>
+              </ul>
             </div>
           </div>
-          <div
-            class="tab-pane fade"
-            id="ratingReviews"
-            role="tabpanel"
-            aria-labelledby="rating-reviews-tab"
-          >
+        </div>
+        <div class="tab-pane fade" id="ratingReviews" role="tabpanel" aria-labelledby="rating-reviews-tab">
           <div class="container">
             <div class="review-header mt-3">
               <div>
@@ -294,7 +193,8 @@
               </div>
               <div>
                 <div class="btn-group">
-                  <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <button class="btn btn-secondary btn-sm dropdown-toggle mb-1" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Latest
                   </button>
                   <ul class="dropdown-menu">
@@ -308,98 +208,97 @@
               </div>
             </div>
           </div>
-            <!-- Rating & Reviews Content Here -->
-            <div class="container my-4">
-                <!-- Review Cards -->
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="review-card">
-                      <div class="review-header">
-                        <strong>Samantha D.</strong>
-                        <div class="review-rating">★★★★★ 4.5</div>
-                      </div>
-                      <div class="review-date">Posted on August 14, 2023</div>
-                      <p class="review-content">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-                    </div>
+          <!-- Rating & Reviews Content Here -->
+          <div class="container my-4">
+            <!-- Review Cards -->
+            <div class="row">
+              <div class="col-md-6">
+                <div class="review-card">
+                  <div class="review-header">
+                    <strong>Samantha D.</strong>
+                    <div class="review-rating">★★★★★ 4.5</div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="review-card">
-                      <div class="review-header">
-                        <strong>Samantha D.</strong>
-                        <div class="review-rating">★★★★★ 4.5</div>
-                      </div>
-                      <div class="review-date">Posted on August 14, 2023</div>
-                      <p class="review-content">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="review-card">
-                      <div class="review-header">
-                        <strong>Samantha D.</strong>
-                        <div class="review-rating">★★★★★ 4.5</div>
-                      </div>
-                      <div class="review-date">Posted on August 14, 2023</div>
-                      <p class="review-content">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="review-card">
-                      <div class="review-header">
-                        <strong>Samantha D.</strong>
-                        <div class="review-rating">★★★★★ 4.5</div>
-                      </div>
-                      <div class="review-date">Posted on August 14, 2023</div>
-                      <p class="review-content">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-                    </div>
-                  </div>
+                  <div class="review-date">Posted on August 14, 2023</div>
+                  <p class="review-content">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua."</p>
                 </div>
-
-                <div class="text-center">
-                  <div class="load-more-btn">Load more Review</div>
-                </div>
-
               </div>
-          </div>
-          <div
-            class="tab-pane fade"
-            id="faqs"
-            role="tabpanel"
-            aria-labelledby="faqs-tab"
-          >
-            <!-- FAQs Content Here -->
-          </div>
-        </div>
-      </div>
-    </main>
+              <div class="col-md-6">
+                <div class="review-card">
+                  <div class="review-header">
+                    <strong>Samantha D.</strong>
+                    <div class="review-rating">★★★★★ 4.5</div>
+                  </div>
+                  <div class="review-date">Posted on August 14, 2023</div>
+                  <p class="review-content">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua."</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="review-card">
+                  <div class="review-header">
+                    <strong>Samantha D.</strong>
+                    <div class="review-rating">★★★★★ 4.5</div>
+                  </div>
+                  <div class="review-date">Posted on August 14, 2023</div>
+                  <p class="review-content">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua."</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="review-card">
+                  <div class="review-header">
+                    <strong>Samantha D.</strong>
+                    <div class="review-rating">★★★★★ 4.5</div>
+                  </div>
+                  <div class="review-date">Posted on August 14, 2023</div>
+                  <p class="review-content">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua."</p>
+                </div>
+              </div>
+            </div>
 
-    <footer>
-      <div class="footer-content">
-        <div class="footer-logo">
-          <img src="img/logo.png" alt="Company Logo" />
-        </div>
-        <div class="footer-links">
-          <a href="#AboutUs">About Us</a>
-          <a href="#Products">Products</a>
-          <a href="#Gallery">Gallery</a>
-          <a href="#Download">Download</a>
-          <a href="#Blogs">Blogs</a>
-          <a href="#ContactUs">Contact Us</a>
-        </div>
-        <div class="footer-socials">
-          <a href="https://www.facebook.com"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com"
-            ><i class="bx bxl-instagram"></i
-          ></a>
-          <a href="https://www.youtube.com"><i class="bx bxl-youtube"></i></a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>
-          ©2023 Victous - All rights reserved. Designed & Developed by PRODIGIT
-        </p>
-      </div>
-    </footer>
+            <div class="text-center">
+              <div class="load-more-btn">Load more Review</div>
+            </div>
 
-    <script src="script.js"></script>
-  </body>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="faqs" role="tabpanel" aria-labelledby="faqs-tab">
+          <!-- FAQs Content Here -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="img/logo.png" alt="Company Logo" />
+      </div>
+      <div class="footer-links">
+        <a href="#AboutUs">About Us</a>
+        <a href="#Products">Products</a>
+        <a href="#Gallery">Gallery</a>
+        <a href="#Download">Download</a>
+        <a href="#Blogs">Blogs</a>
+        <a href="#ContactUs">Contact Us</a>
+      </div>
+      <div class="footer-socials">
+        <a href="https://www.facebook.com"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com"><i class="bx bxl-instagram"></i></a>
+        <a href="https://www.youtube.com"><i class="bx bxl-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>
+        ©2023 Victous - All rights reserved. Designed & Developed by PRODIGIT
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
 </html>

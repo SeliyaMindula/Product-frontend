@@ -33,6 +33,9 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   }
 
+  main {
+    padding-top: 150px; 
+  }
 
 /*NAVBAR*/
   
@@ -53,7 +56,7 @@
   border-bottom: 2px solid #490082; 
 }
 .navbar-custom .nav-item:not(:last-child) {
-  margin-right: 20px; 
+  margin-right: 18px; 
 }
 .navbar-custom .login {
   background-color: #490082; 
@@ -68,7 +71,9 @@
   border: 1px solid #3b3b3b;
   padding: 8px 15px 8px 15px; 
   border-radius: 0px; 
-  margin-left: 10px; 
+  margin-left: 10px;
+  
+ 
 }
 
 .navbar-toggler {
@@ -154,6 +159,7 @@ footer {
   border: 0px solid white; 
   border-radius: 0.25rem; 
   padding: 0.5rem 1rem; 
+  margin-top: 10px;
 }
 
 
@@ -189,7 +195,7 @@ footer {
   padding: 0.5rem 1rem; 
 }
 
- .Wellness{
+ /* .Wellness{
   background-image: url("img/wellness.png");
   width: 100%;
   min-height: 100vh;
@@ -199,7 +205,42 @@ footer {
   position: relative;
   height: 100vh;
 
-} 
+}  */
+
+/* Wellness */
+
+.Wellness {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Adjust height as needed */
+}
+
+.Wellness .carousel-inner .carousel-item {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.Wellness .carousel-item img {
+  height: 100vh;
+  object-fit: cover; /* This will ensure images cover the whole area */
+}
+
+/* Adjust the position and style of your overlay content as needed */
+.Wellness .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Ensure controls are visible */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #fff; /* Or any color that makes them visible over your images */
+}
+/*close Wellness */
+
 
 .product-home .row, .product-home .col-12 {
   padding: 0;
@@ -453,10 +494,11 @@ footer {
   background-color: #d2d2d2;
   cursor: pointer;
 }
-.product-title-p {
-  padding-top: 170px; 
-}
 
+.swiper-container {
+  max-height: 400px; 
+  overflow-y: hidden; 
+}
 
   @media (max-width: 991px) {
     .navbar-brand .brand-text {
